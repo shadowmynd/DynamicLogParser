@@ -4,17 +4,14 @@
 // 
 // Author: Brandon Moller <brandon@shadowmynd.com>
 // 
-// Created: 02-23-2015 5:38 PM
-// Modified: 02-23-2015 8:41 PM []
+// Created: 02-23-2015 8:47 PM
+// Modified: 02-23-2015 9:44 PM []
 namespace DynamicLogParser
 {
     using System;
-    using System.Collections.Generic;
-    using System.Diagnostics;
     using System.IO;
     using System.Text;
     using System.Text.RegularExpressions;
-    using Parser;
 
     public static class Parser<TParserSyntax>
         where TParserSyntax : ParserSyntaxBase

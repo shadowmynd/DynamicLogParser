@@ -1,4 +1,12 @@
-﻿namespace DynamicLogParser.Parser
+﻿// Solution: PersonalLibs
+// Project: DynamicLogParser
+// FileName: JsonLikeParserService.cs
+// 
+// Author: Brandon Moller <brandon@shadowmynd.com>
+// 
+// Created: 02-23-2015 8:51 PM
+// Modified: 02-23-2015 9:44 PM []
+namespace DynamicLogParser.Parser
 {
     using System.Collections.Generic;
     using System.Diagnostics;

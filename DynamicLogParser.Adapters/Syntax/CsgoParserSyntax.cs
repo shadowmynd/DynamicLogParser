@@ -4,9 +4,8 @@
 // 
 // Author: Brandon Moller <brandon@shadowmynd.com>
 // 
-// Created: 02-23-2015 5:42 PM
-// Modified: 02-23-2015 8:41 PM []
-
+// Created: 02-23-2015 9:37 PM
+// Modified: 02-23-2015 9:44 PM []
 namespace DynamicLogParser.Adapters
 {
     public class CsgoParserSyntax : JsonLikeParserSyntax

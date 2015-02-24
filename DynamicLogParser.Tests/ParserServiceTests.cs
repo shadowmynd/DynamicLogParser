@@ -1,10 +1,17 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿// Solution: PersonalLibs
+// Project: DynamicLogParser.Tests
+// FileName: ParserServiceTests.cs
+// 
+// Author: Brandon Moller <brandon@shadowmynd.com>
+// 
+// Created: 02-23-2015 9:15 PM
+// Modified: 02-23-2015 9:44 PM []
 
 namespace DynamicLogParser.Tests
 {
+    using System;
     using System.IO;
-    using Adapters;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Parser;
     using Rhino.Mocks;
 
