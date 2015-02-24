@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLogParser", "DynamicLogParser\DynamicLogParser.csproj", "{39DAE5BB-F20A-4B65-BD6F-3B29A80799C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JsonLike LogParser", "JsonLike LogParser", "{DA8904E7-7353-4314-9A59-A24E6EE0C3E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLogParser.Tests", "DynamicLogParser.Tests\DynamicLogParser.Tests.csproj", "{D0936493-E041-47D5-BA65-3494E440834D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLogParser.Adapters", "DynamicLogParser.Adapters\DynamicLogParser.Adapters.csproj", "{A9EE3CCC-8BBB-482D-B0B3-3828BC670781}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39DAE5BB-F20A-4B65-BD6F-3B29A80799C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39DAE5BB-F20A-4B65-BD6F-3B29A80799C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39DAE5BB-F20A-4B65-BD6F-3B29A80799C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39DAE5BB-F20A-4B65-BD6F-3B29A80799C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0936493-E041-47D5-BA65-3494E440834D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0936493-E041-47D5-BA65-3494E440834D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0936493-E041-47D5-BA65-3494E440834D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0936493-E041-47D5-BA65-3494E440834D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9EE3CCC-8BBB-482D-B0B3-3828BC670781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9EE3CCC-8BBB-482D-B0B3-3828BC670781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9EE3CCC-8BBB-482D-B0B3-3828BC670781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9EE3CCC-8BBB-482D-B0B3-3828BC670781}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{39DAE5BB-F20A-4B65-BD6F-3B29A80799C5} = {DA8904E7-7353-4314-9A59-A24E6EE0C3E4}
+		{D0936493-E041-47D5-BA65-3494E440834D} = {DA8904E7-7353-4314-9A59-A24E6EE0C3E4}
+		{A9EE3CCC-8BBB-482D-B0B3-3828BC670781} = {DA8904E7-7353-4314-9A59-A24E6EE0C3E4}
+	EndGlobalSection
+EndGlobal

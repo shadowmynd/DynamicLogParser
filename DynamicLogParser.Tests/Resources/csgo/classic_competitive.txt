@@ -1,0 +1,279 @@
+﻿"SaveFile"
+{
+	"timestamp"		"2015-02-23 11:55:38"
+	"map"		"de_vertigo"
+	"round"		"5"
+	"FirstHalfScore"
+	{
+		"team1"		"4"
+		"team2"		"1"
+	}
+	"History"
+	{
+		"NumConsecutiveCTLoses"		"1"
+		"LoserBonus"		"1400"
+	}
+	"RoundResults"
+	{
+		"round1"		"1"
+		"round2"		"1"
+		"round3"		"3"
+		"round4"		"1"
+		"round5"		"6"
+	}
+	"PlayersOnTeam1"
+	{
+		"77946960"
+		{
+			"name"		"chessgeek"
+			"kills"		"12"
+			"assists"		"1"
+			"deaths"		"1"
+			"mvps"		"3"
+			"score"		"25"
+			"cash"		"12050"
+			"enemyKs"		"12"
+			"enemyHSs"		"7"
+			"enemy3Ks"		"1"
+			"enemy4Ks"		"0"
+			"enemy5Ks"		"1"
+			"MatchStats"
+			{
+				"EquipmentValue"
+				{
+					"round1"		"200"
+					"round2"		"200"
+					"round3"		"3400"
+					"round4"		"6200"
+					"round5"		"6200"
+				}
+				"MoneySaved"
+				{
+					"round1"		"800"
+					"round2"		"4050"
+					"round3"		"7800"
+					"round4"		"5900"
+					"round5"		"10050"
+				}
+				"LiveTime"
+				{
+					"round1"		"81"
+					"round2"		"60"
+					"round3"		"53"
+					"round4"		"30"
+					"round6"		"87"
+				}
+				"Kills"
+				{
+					"round2"		"5"
+					"round3"		"2"
+					"round4"		"3"
+					"round5"		"2"
+				}
+				"Damage"
+				{
+					"round2"		"461"
+					"round3"		"251"
+					"round4"		"300"
+					"round5"		"6"
+				}
+				"KillReward"
+				{
+					"round2"		"200"
+					"round3"		"3400"
+					"round4"		"6200"
+					"round5"		"600"
+				}
+				"HeadShotKills"
+				{
+					"round2"		"4"
+					"round4"		"3"
+				}
+				"CashEarned"
+				{
+					"round2"		"5550"
+					"round3"		"8400"
+					"round4"		"6800"
+					"round5"		"10650"
+					"round6"		"12050"
+				}
+				"Deaths"
+				{
+					"round3"		"1"
+				}
+				"Assists"
+				{
+					"round3"		"1"
+				}
+			}
+		}
+		"77654960"
+		{
+			"name"		"testuser1"
+			"kills"		"15"
+			"assists"		"1"
+			"deaths"		"1"
+			"mvps"		"1"
+			"score"		"20"
+			"cash"		"7050"
+			"enemyKs"		"15"
+			"enemyHSs"		"4"
+			"enemy3Ks"		"2"
+			"enemy4Ks"		"0"
+			"enemy5Ks"		"0"
+			"MatchStats"
+			{
+				"EquipmentValue"
+				{
+					"round1"		"300"
+					"round2"		"300"
+					"round3"		"2400"
+					"round4"		"7200"
+					"round5"		"7050"
+				}
+				"MoneySaved"
+				{
+					"round1"		"400"
+					"round2"		"2200"
+					"round3"		"3750"
+					"round4"		"4450"
+					"round5"		"7775"
+				}
+				"LiveTime"
+				{
+					"round1"		"81"
+					"round2"		"60"
+					"round3"		"53"
+					"round4"		"30"
+					"round6"		"87"
+				}
+				"Kills"
+				{
+					"round2"		"5"
+					"round3"		"3"
+					"round4"		"3"
+					"round5"		"4"
+				}
+				"Damage"
+				{
+					"round2"		"461"
+					"round3"		"251"
+					"round4"		"300"
+					"round5"		"6"
+				}
+				"KillReward"
+				{
+					"round2"		"200"
+					"round3"		"3400"
+					"round4"		"6200"
+					"round5"		"600"
+				}
+				"HeadShotKills"
+				{
+					"round2"		"4"
+					"round4"		"3"
+				}
+				"CashEarned"
+				{
+					"round2"		"5550"
+					"round3"		"8400"
+					"round4"		"6800"
+					"round5"		"10650"
+					"round6"		"12050"
+				}
+				"Deaths"
+				{
+					"round3"		"1"
+				}
+				"Assists"
+				{
+					"round3"		"1"
+				}
+			}
+		}
+		"77946600"
+		{
+			"name"		"testuser2"
+			"kills"		"10"
+			"assists"		"1"
+			"deaths"		"1"
+			"mvps"		"3"
+			"score"		"17"
+			"cash"		"12050"
+			"enemyKs"		"12"
+			"enemyHSs"		"7"
+			"enemy3Ks"		"1"
+			"enemy4Ks"		"0"
+			"enemy5Ks"		"1"
+			"MatchStats"
+			{
+				"EquipmentValue"
+				{
+					"round1"		"200"
+					"round2"		"200"
+					"round3"		"3400"
+					"round4"		"6200"
+					"round5"		"6200"
+				}
+				"MoneySaved"
+				{
+					"round1"		"800"
+					"round2"		"4050"
+					"round3"		"7800"
+					"round4"		"5900"
+					"round5"		"10050"
+				}
+				"LiveTime"
+				{
+					"round1"		"81"
+					"round2"		"60"
+					"round3"		"53"
+					"round4"		"30"
+					"round6"		"87"
+				}
+				"Kills"
+				{
+					"round2"		"5"
+					"round3"		"2"
+					"round4"		"3"
+					"round5"		"2"
+				}
+				"Damage"
+				{
+					"round2"		"461"
+					"round3"		"251"
+					"round4"		"300"
+					"round5"		"6"
+				}
+				"KillReward"
+				{
+					"round2"		"200"
+					"round3"		"3400"
+					"round4"		"6200"
+					"round5"		"600"
+				}
+				"HeadShotKills"
+				{
+					"round2"		"4"
+					"round4"		"3"
+				}
+				"CashEarned"
+				{
+					"round2"		"5550"
+					"round3"		"8400"
+					"round4"		"6800"
+					"round5"		"10650"
+					"round6"		"12050"
+				}
+				"Deaths"
+				{
+					"round3"		"1"
+				}
+				"Assists"
+				{
+					"round3"		"1"
+				}
+			}
+		}
+	}
+}

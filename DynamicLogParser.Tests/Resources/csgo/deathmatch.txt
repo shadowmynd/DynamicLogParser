@@ -1,0 +1,88 @@
+﻿"SaveFile"
+{
+	"timestamp"		"2015-02-23 12:27:40"
+	"map"		"de_vertigo"
+	"round"		"0"
+	"FirstHalfScore"
+	{
+		"team1"		"0"
+		"team2"		"0"
+	}
+	"History"
+	{
+		"LoserBonus"		"0"
+	}
+	"PlayersOnTeam1"
+	{
+		"77946960"
+		{
+			"name"		"chessgeek"
+			"kills"		"19"
+			"assists"		"0"
+			"deaths"		"15"
+			"mvps"		"0"
+			"score"		"284"
+			"cash"		"99999"
+			"enemyKs"		"19"
+			"enemyHSs"		"9"
+			"enemy3Ks"		"1"
+			"enemy4Ks"		"1"
+			"enemy5Ks"		"1"
+			"armor"		"100"
+			"helmet"		"1"
+			"Items"
+			{
+				"item"		"weapon_knife"
+				"item"		"weapon_p250"
+				"item"		"weapon_aug"
+			}
+		}
+		"77946925"
+		{
+			"name"		"test1"
+			"kills"		"20"
+			"assists"		"0"
+			"deaths"		"15"
+			"mvps"		"0"
+			"score"		"290"
+			"cash"		"99999"
+			"enemyKs"		"19"
+			"enemyHSs"		"9"
+			"enemy3Ks"		"1"
+			"enemy4Ks"		"1"
+			"enemy5Ks"		"1"
+			"armor"		"100"
+			"helmet"		"1"
+			"Items"
+			{
+				"item"		"weapon_knife"
+				"item"		"weapon_p250"
+				"item"		"weapon_aug"
+			}
+		}
+		"77946220"
+		{
+			"name"		"test2"
+			"kills"		"15"
+			"assists"		"0"
+			"deaths"		"15"
+			"mvps"		"0"
+			"score"		"224"
+			"cash"		"99999"
+			"enemyKs"		"19"
+			"enemyHSs"		"9"
+			"enemy3Ks"		"1"
+			"enemy4Ks"		"1"
+			"enemy5Ks"		"1"
+			"armor"		"100"
+			"helmet"		"1"
+			"Items"
+			{
+				"item"		"weapon_knife"
+				"item"		"weapon_p250"
+				"item"		"weapon_aug"
+			}
+		}
+
+	}
+}
