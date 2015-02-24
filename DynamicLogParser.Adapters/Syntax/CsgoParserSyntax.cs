@@ -6,8 +6,10 @@
 // 
 // Created: 02-23-2015 9:37 PM
 // Modified: 02-23-2015 9:44 PM []
-namespace DynamicLogParser.Adapters
+namespace DynamicLogParser.Adapters.Syntax
 {
+    using Parser;
+
     public class CsgoParserSyntax : JsonLikeParserSyntax
     {
         public override string ScopeMarkExitRegex

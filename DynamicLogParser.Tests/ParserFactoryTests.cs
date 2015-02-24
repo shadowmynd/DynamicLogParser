@@ -11,6 +11,7 @@ namespace DynamicLogParser.Tests
 {
     using System;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Parser;
     using Rhino.Mocks;
 
     [TestClass]

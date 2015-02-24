@@ -15,10 +15,9 @@
 // 
 // Created: 02-23-2015 8:48 PM
 // Modified: 02-23-2015 8:48 PM []
-namespace DynamicLogParser
+namespace DynamicLogParser.Parser
 {
     using System;
-    using Parser;
 
     public static class ParserFactory
     {

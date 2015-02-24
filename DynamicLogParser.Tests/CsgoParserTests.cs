@@ -9,7 +9,9 @@
 namespace DynamicLogParser.Tests
 {
     using Adapters;
+    using Adapters.Syntax;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Parser;
 
     [TestClass]
     public class CsgoParserTests
