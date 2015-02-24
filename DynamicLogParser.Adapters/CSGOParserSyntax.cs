@@ -9,7 +9,7 @@
 
 namespace DynamicLogParser.Adapters
 {
-    public class CsgoParserSyntax : ParserSyntaxBase
+    public class CsgoParserSyntax : JsonLikeParserSyntax
     {
         public override string ScopeMarkExitRegex
         {

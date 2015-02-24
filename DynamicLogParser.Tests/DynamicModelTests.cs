@@ -41,7 +41,6 @@ namespace DynamicLogParser.Tests
         [TestMethod]
         public void ShouldSetIndex()
         {
-
             this._model[0] = "123";
             this._model[0] = "123";
             this._model.testProperty = new DynamicModel();

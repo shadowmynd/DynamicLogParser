@@ -40,8 +40,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DynamicModel.cs" />
-    <Compile Include="Parser.cs" />
-    <Compile Include="ParserSyntaxBase.cs" />
+    <Compile Include="Parser\IParserService.cs" />
+    <Compile Include="Parser\JsonLikeParserService.cs" />
+    <Compile Include="Parser\JsonLikeParserSyntax.cs" />
+    <Compile Include="Parser\MatchEntry.cs" />
+    <Compile Include="Parser\Parser.cs" />
+    <Compile Include="Parser\ParserFactory.cs" />
+    <Compile Include="Parser\ParserService.cs" />
+    <Compile Include="Parser\ParserSyntaxBase.cs" />
+    <Compile Include="Parser\SyntaxTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
