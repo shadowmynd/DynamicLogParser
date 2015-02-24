@@ -1,9 +1,15 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+﻿// Solution: PersonalLibs
+// Project: DynamicLogParser.Tests
+// FileName: CsgoParserTests.cs
+// 
+// Author: Brandon Moller <brandon@shadowmynd.com>
+// 
+// Created: 02-23-2015 5:42 PM
+// Modified: 02-23-2015 8:41 PM []
 namespace DynamicLogParser.Tests
 {
     using Adapters;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
     public class CsgoParserTests

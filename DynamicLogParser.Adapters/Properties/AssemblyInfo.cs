@@ -1,5 +1,13 @@
-﻿using System.Reflection;
-using System.Runtime.CompilerServices;
+﻿// Solution: PersonalLibs
+// Project: DynamicLogParser.Adapters
+// FileName: AssemblyInfo.cs
+// 
+// Author: Brandon Moller <brandon@shadowmynd.com>
+// 
+// Created: 02-23-2015 5:42 PM
+// Modified: 02-23-2015 8:41 PM []
+
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 

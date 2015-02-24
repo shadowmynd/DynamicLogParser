@@ -1,4 +1,12 @@
-﻿namespace DynamicLogParser
+﻿// Solution: PersonalLibs
+// Project: DynamicLogParser
+// FileName: DynamicModel.cs
+// 
+// Author: Brandon Moller <brandon@shadowmynd.com>
+// 
+// Created: 02-23-2015 5:38 PM
+// Modified: 02-23-2015 8:41 PM []
+namespace DynamicLogParser
 {
     using System;
     using System.Collections.Concurrent;
