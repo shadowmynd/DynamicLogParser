@@ -8,7 +8,7 @@
 // Modified: 02-23-2015 9:44 PM []
 namespace DynamicLogParser.Tests
 {
-    using Adapters;
+    using Adapters.Adapter;
     using Adapters.Syntax;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Parser;
@@ -17,9 +17,18 @@ namespace DynamicLogParser.Tests
     public class CsgoParserTests
     {
         [TestMethod]
+        public void AdapterShouldParseDeathmatchResults()
+        {
+            var adapter = new CsgoLogParserAdapter();
+            dynamic model = adapter.Parse(this.GetDeathmatchFileLocation());
+            var obj = model.savefile.timestamp;
+            Assert.IsNotNull(obj);
+        }
+
+        [TestMethod]
         public void ShouldParseDeathmatchResults()
         {
-            dynamic model = Parser<CsgoParserSyntax>.Load(this.GetDeathmatchFileLocation());
+            dynamic model = FileParser<CsgoParserSyntax>.Load(this.GetDeathmatchFileLocation());
             var obj = model.savefile.timestamp;
             Assert.IsNotNull(obj);
         }
@@ -27,7 +36,7 @@ namespace DynamicLogParser.Tests
         [TestMethod]
         public void ShouldParseClassicCompetitiveResults()
         {
-            dynamic model = Parser<CsgoParserSyntax>.Load(this.GetClassicCompetitiveResults());
+            dynamic model = FileParser<CsgoParserSyntax>.Load(this.GetClassicCompetitiveResults());
             var obj = model.savefile.timestamp;
             Assert.IsNotNull(obj);
         }

@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\CsgoLogParserAdapter.cs" />
+    <Compile Include="Adapter\LogParserAdapterBase.cs" />
     <Compile Include="Syntax\CsgoParserSyntax.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

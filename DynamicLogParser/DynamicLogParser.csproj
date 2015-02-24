@@ -44,7 +44,7 @@
     <Compile Include="Parser\JsonLikeParserService.cs" />
     <Compile Include="Parser\JsonLikeParserSyntax.cs" />
     <Compile Include="Parser\MatchEntry.cs" />
-    <Compile Include="Parser\Parser.cs" />
+    <Compile Include="Parser\FileParser.cs" />
     <Compile Include="Parser\ParserFactory.cs" />
     <Compile Include="Parser\ParserService.cs" />
     <Compile Include="Parser\ParserSyntaxBase.cs" />

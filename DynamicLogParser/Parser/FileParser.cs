@@ -13,7 +13,7 @@ namespace DynamicLogParser.Parser
     using System.Text;
     using System.Text.RegularExpressions;
 
-    public static class Parser<TParserSyntax>
+    public static class FileParser<TParserSyntax>
         where TParserSyntax : ParserSyntaxBase
     {
         public static DynamicModel Load(string filePath)

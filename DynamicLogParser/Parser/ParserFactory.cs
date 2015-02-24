@@ -6,20 +6,11 @@
 // 
 // Created: 02-23-2015 8:48 PM
 // Modified: 02-23-2015 9:44 PM []
-
-// Solution: PersonalLibs
-// Project: DynamicLogParser
-// FileName: ParserFactory.cs
-// 
-// Author: Brandon Moller <brandon@shadowmynd.com>
-// 
-// Created: 02-23-2015 8:48 PM
-// Modified: 02-23-2015 8:48 PM []
 namespace DynamicLogParser.Parser
 {
     using System;
 
-    public static class ParserFactory
+    internal static class ParserFactory
     {
         public static ParserService CreateParser(ParserSyntaxBase syntaxModel)
         {
