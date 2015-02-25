@@ -15,12 +15,21 @@ namespace DynamicLogParser
 
     public class DynamicModel : DynamicObject
     {
+        public static int Count(DynamicModel model)
+        {
+            return model.CurrentPropertyIndex;
+        }
+
+        private int CurrentPropertyIndex { get; set; }
+        private IDictionary<int, string> PropertyLocationDictionary { get; set; }
         private IDictionary<string, object> PropertyDictionary { get; set; }
         private const string ArrayPrefix = "ArrayIndex";
 
         public DynamicModel()
         {
             this.PropertyDictionary = new ConcurrentDictionary<string, object>();
+            this.PropertyLocationDictionary = new ConcurrentDictionary<int, string>();
+            this.CurrentPropertyIndex = 0;
         }
 
         public override bool TryGetMember(GetMemberBinder binder, out object result)
@@ -33,15 +42,21 @@ namespace DynamicLogParser
         {
             var name = binder.Name.ToLower();
             this.PropertyDictionary[name] = value;
-
+            this.SetPropertyInsertDictionary(name);
             return true;
+        }
+
+        private void SetPropertyInsertDictionary(string name)
+        {
+            this.PropertyLocationDictionary[this.CurrentPropertyIndex] = name;
+            this.CurrentPropertyIndex++;
         }
 
         public bool TryCreateMember(string name, object value)
         {
             name = name.ToLower();
             this.PropertyDictionary[name] = value;
-
+            this.SetPropertyInsertDictionary(name);
             return true;
         }
 
@@ -49,6 +64,18 @@ namespace DynamicLogParser
         {
             var index = (int)indexes[0];
             var name = this.CreateArrayPropertyName(index);
+            if (!this.PropertyDictionary.TryGetValue(name, out result))
+            {
+                if (!this.PropertyLocationDictionary.TryGetValue(index, out name))
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return true;
+            }
+
             return this.PropertyDictionary.TryGetValue(name, out result);
         }
 
