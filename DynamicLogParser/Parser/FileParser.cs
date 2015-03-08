@@ -23,7 +23,16 @@ namespace DynamicLogParser.Parser
 
         public static DynamicModel Load(string filePath, Encoding encoding)
         {
-            var model = new DynamicModel();
+            if (string.IsNullOrEmpty(filePath))
+            {
+                throw new ArgumentNullException("filePath");
+            }
+
+            if (File.Exists(filePath))
+            {
+                throw new InvalidOperationException("No such file exists");
+            }
+
             var syntax = Activator.CreateInstance<TParserSyntax>();
             using (var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
             using (var reader = new StreamReader(fileStream, encoding))
@@ -42,10 +51,8 @@ namespace DynamicLogParser.Parser
                 }
 
                 var service = ParserFactory.CreateParser(syntax);
-                model = service.Parse(text);
+                return service.Parse(text);
             }
-
-            return model;
         }
     }
 }

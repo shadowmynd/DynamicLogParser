@@ -9,7 +9,6 @@
 namespace DynamicLogParser.Parser
 {
     using System.Collections.Generic;
-    using System.Diagnostics;
     using System.Text.RegularExpressions;
 
     public class JsonLikeParserService : ParserService
@@ -38,8 +37,7 @@ namespace DynamicLogParser.Parser
             while (orderedMatches.MoveNext())
             {
                 var match = orderedMatches.Current;
-                Debug.Assert(match != null, "match != null");
-                if (match.Checked)
+                if (match == null || match.Checked)
                 {
                     continue;
                 }

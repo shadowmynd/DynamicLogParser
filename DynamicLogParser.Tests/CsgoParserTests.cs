@@ -8,7 +8,6 @@
 // Modified: 02-23-2015 9:44 PM []
 namespace DynamicLogParser.Tests
 {
-    using System;
     using Adapters.Adapter;
     using Adapters.Syntax;
     using Microsoft.CSharp.RuntimeBinder;
