@@ -17,6 +17,38 @@ namespace DynamicLogParser.Tests
     [TestClass]
     public class CsgoParserTests
     {
+        /*
+         *  Sample Usage
+         *  ----------------------------------------
+         *  
+           var adapter = new CsgoLogParserAdapter();
+            dynamic model = adapter.Parse(this.GetDeathmatchFileLocation());
+            model = model.savefile;
+            var players = new List<MatchPlayerModel>();
+            int bTeam1 = DynamicModel.Count(model.playersonteam1);
+            for (var i = 0; i < bTeam1; i++)
+            {
+                dynamic dPlayer = model.playersonteam1[i];
+                var player = new MatchPlayerModel((string) dPlayer.name, Int32.Parse(dPlayer.score));
+                players.Add(player);
+            }
+
+            int bTeam2 = DynamicModel.Count(model.playersonteam2);
+            for (var i = 0; i < bTeam2; i++)
+            {
+                dynamic dPlayer = model.playersonteam2[i];
+                var player = new MatchPlayerModel((string) dPlayer.name, Int32.Parse(dPlayer.score));
+                players.Add(player);
+            }
+
+            var retModel = new SteamMatchCompleteModel(
+                players.Aggregate(((i1, i2) => i1.FinalScore > i2.FinalScore ? i1 : i2))
+                    .UserIdentifierKey)
+            {
+                MatchPlayers = players,
+                RecordedTimestamp = model.timestamp
+            };
+         */
         [TestMethod]
         public void AdapterShouldParseDeathmatchResults()
         {
