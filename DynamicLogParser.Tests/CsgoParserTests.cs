@@ -111,15 +111,15 @@ namespace DynamicLogParser.Tests
 
         private static string GetClassicCompetitiveResults()
         {
-            return RelativeFilePath(Environment.CurrentDirectory, @"..\..\Resources\csgo\classic_competitive.txt");
+            return RelativeFullFilePath(Environment.CurrentDirectory, @"..\..\Resources\csgo\classic_competitive.txt");
         }
 
         private static string GetDeathmatchFileLocation()
         {
-            return RelativeFilePath(Environment.CurrentDirectory, @"..\..\Resources\csgo\deathmatch.txt");
+            return RelativeFullFilePath(Environment.CurrentDirectory, @"..\..\Resources\csgo\deathmatch.txt");
         }
 
-        private static string RelativeFilePath(string basePath, string relativePath)
+        private static string RelativeFullFilePath(string basePath, string relativePath)
         {
             var pathModifier = string.Format("..{0}", Path.DirectorySeparatorChar);
             var iterations = 0;
