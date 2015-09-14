@@ -8,6 +8,9 @@
 // Modified: 02-23-2015 9:44 PM []
 namespace DynamicLogParser.Tests
 {
+    using System;
+    using System.IO;
+
     using Adapters.Adapter;
     using Adapters.Syntax;
     using Microsoft.CSharp.RuntimeBinder;
@@ -53,7 +56,7 @@ namespace DynamicLogParser.Tests
         public void AdapterShouldParseDeathmatchResults()
         {
             var adapter = new CsgoLogParserAdapter();
-            dynamic model = adapter.Parse(this.GetDeathmatchFileLocation());
+            dynamic model = adapter.Parse(GetDeathmatchFileLocation());
             var obj = model.savefile.timestamp;
             Assert.IsNotNull(obj);
         }
@@ -61,7 +64,7 @@ namespace DynamicLogParser.Tests
         [TestMethod]
         public void ShouldParseDeathmatchResults()
         {
-            dynamic model = FileParser<CsgoParserSyntax>.Load(this.GetDeathmatchFileLocation());
+            dynamic model = FileParser<CsgoParserSyntax>.Load(GetDeathmatchFileLocation());
             var obj = model.savefile.timestamp;
             Assert.IsNotNull(obj);
         }
@@ -69,7 +72,7 @@ namespace DynamicLogParser.Tests
         [TestMethod]
         public void ShouldParseClassicCompetitiveResults()
         {
-            dynamic model = FileParser<CsgoParserSyntax>.Load(this.GetClassicCompetitiveResults());
+            dynamic model = FileParser<CsgoParserSyntax>.Load(GetClassicCompetitiveResults());
             var obj = model.savefile.timestamp;
             Assert.IsNotNull(obj);
         }
@@ -77,16 +80,16 @@ namespace DynamicLogParser.Tests
         [TestMethod]
         public void ShouldExtractName()
         {
-            dynamic model = FileParser<CsgoParserSyntax>.Load(this.GetDeathmatchFileLocation());
+            dynamic model = FileParser<CsgoParserSyntax>.Load(GetDeathmatchFileLocation());
             var obj = model.savefile.playersonteam1[0];
             var name = obj.name;
-            Assert.AreEqual((string)name, "chessgeek");
+            Assert.AreEqual((string)name, "testuser1");
         }
 
         [TestMethod]
         public void ShouldSafelyIterateProperties()
         {
-            dynamic model = FileParser<CsgoParserSyntax>.Load(this.GetDeathmatchFileLocation());
+            dynamic model = FileParser<CsgoParserSyntax>.Load(GetDeathmatchFileLocation());
             int bounds = DynamicModel.Count(model.savefile.playersonteam1);
             for (var i = 0; i < bounds; i++)
             {
@@ -99,21 +102,43 @@ namespace DynamicLogParser.Tests
         [ExpectedException(typeof(RuntimeBinderException))]
         public void ShouldFailExtractScore()
         {
-            dynamic model = FileParser<CsgoParserSyntax>.Load(this.GetDeathmatchFileLocation());
+            dynamic model = FileParser<CsgoParserSyntax>.Load(GetDeathmatchFileLocation());
             var obj = model.savefile.playersonteam1[3];
             var name = obj.name;
-            Assert.AreEqual((string)name, "chessgeek");
+            Assert.AreEqual((string)name, "testuser1");
         }
 
 
-        private string GetClassicCompetitiveResults()
+        private static string GetClassicCompetitiveResults()
         {
-            return @"G:\Development\GitRepos\PersonalLibs\DynamicLogParser.Tests\Resources\csgo\classic_competitive.txt";
+            return RelativeFilePath(Environment.CurrentDirectory, @"..\..\Resources\csgo\classic_competitive.txt");
         }
 
-        private string GetDeathmatchFileLocation()
+        private static string GetDeathmatchFileLocation()
         {
-            return @"G:\Development\GitRepos\PersonalLibs\DynamicLogParser.Tests\Resources\csgo\deathmatch.txt";
+            return RelativeFilePath(Environment.CurrentDirectory, @"..\..\Resources\csgo\deathmatch.txt");
+        }
+
+        private static string RelativeFilePath(string basePath, string relativePath)
+        {
+            var pathModifier = string.Format("..{0}", Path.DirectorySeparatorChar);
+            var iterations = 0;
+            while (relativePath.StartsWith(pathModifier))
+            {
+                iterations++;
+                relativePath = relativePath.Remove(0, 3);
+            }
+
+            while (iterations-- > 0)
+            {
+                var info = new DirectoryInfo(basePath);
+                if (info.Parent != null)
+                {
+                    basePath = info.Parent.FullName;
+                }
+            }
+
+            return Path.Combine(basePath, relativePath);
         }
     }
 }

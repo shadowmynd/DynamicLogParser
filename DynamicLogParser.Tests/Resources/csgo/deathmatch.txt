@@ -14,9 +14,9 @@
 	}
 	"PlayersOnTeam1"
 	{
-		"77946960"
+		"177944252"
 		{
-			"name"		"chessgeek"
+			"name"		"testuser1"
 			"kills"		"21"
 			"assists"		"2"
 			"deaths"		"11"
@@ -40,9 +40,9 @@
 	}
 	"PlayersOnTeam2"
 	{
-		"170784684"
+		"172346284"
 		{
-			"name"		"Methodical"
+			"name"		"testuser2"
 			"kills"		"20"
 			"assists"		"1"
 			"deaths"		"20"
@@ -63,9 +63,9 @@
 				"item"		"weapon_negev"
 			}
 		}
-		"221191185"
+		"8837298282"
 		{
-			"name"		"lindseymiller"
+			"name"		"testuser3"
 			"kills"		"3"
 			"assists"		"2"
 			"deaths"		"15"

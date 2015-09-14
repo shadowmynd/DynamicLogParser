@@ -28,7 +28,7 @@ namespace DynamicLogParser.Parser
                 throw new ArgumentNullException("filePath");
             }
 
-            if (File.Exists(filePath))
+            if (!File.Exists(filePath))
             {
                 throw new InvalidOperationException("No such file exists");
             }
